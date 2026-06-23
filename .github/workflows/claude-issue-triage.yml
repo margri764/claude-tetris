@@ -68,8 +68,12 @@ jobs:
                `gh issue edit ${{ github.event.issue.number }} --add-label "label1,label2"`
 
             3. Publicá UN comentario en español en el issue con
-               `gh issue comment ${{ github.event.issue.number }} --body "..."`
-               siguiendo esta estructura en Markdown:
+               `gh issue comment ${{ github.event.issue.number }} --body "..."`.
+               El comentario tiene que estar escrito en Markdown que GitHub
+               pueda renderizar correctamente (GitHub Flavored Markdown):
+               usá encabezados con `#`, negritas con `**`, listas, bloques de
+               código con backticks, etc., de modo que se vea bien formateado
+               en la interfaz de GitHub. Seguí esta estructura:
 
                ## 🤖 Triage automático
 
