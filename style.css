@@ -247,3 +247,27 @@ kbd {
 #restart-btn:hover {
   background: var(--accent-hover);
 }
+
+/* ---- Skin selector ---- */
+.skin-select {
+  background: var(--kbd-bg);
+  color: var(--fg);
+  border: 1px solid var(--board-border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  width: 100%;
+}
+
+.skin-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Neon skin: darker board to make the glow pop */
+body[data-skin="neon"] #board,
+body[data-skin="neon"] #next-canvas {
+  background: #05050a;
+}
